@@ -1,0 +1,10 @@
+.MuiTabs-flexContainer{
+    background-color: #141414;
+    border-top: 1px rgba(255,255,255,0.1) solid;
+    border-bottom: 1px rgba(255,255,255,0.1) solid;
+    height: auto
+}
+
+.MuiTab-wrapper{
+    color: rgba(255,255,255,1);
+}
