@@ -56,7 +56,7 @@ const SecondPage = () => {
   
   return(
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Card" />
     <Tabs
       value={index}
       className='ForumTab'

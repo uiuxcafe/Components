@@ -89,7 +89,7 @@ const CellPage = () => {
 
   return(
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Cell" />
         <Tabs
           value={index}
           className='ForumTab'
