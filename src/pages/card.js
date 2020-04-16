@@ -87,7 +87,7 @@ const SecondPage = () => {
                 <label for="Radius">Radius</label>
                 <br/> <br/>
                 <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
-                <label for="Shadow">Shadow</label>
+                <label for="Shadow">Box Shadow</label>
               </form>
             </Option>
           </OptionArea>
