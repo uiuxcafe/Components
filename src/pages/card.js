@@ -35,6 +35,25 @@ const Option = styled.div`
 
 const SecondPage = () => {
   const [index, setIndex] = useState(0)
+  const [radius,setRadius] = useState(false)
+  const [shadow,setShadow] = useState(false)
+
+  function openRadius(){
+    setRadius(prevRadius => !radius)
+    console.log(radius)
+  }
+
+  function openShadow(){
+    setShadow(prevShadow => !shadow)
+    console.log(shadow)
+  }
+
+  // function setDefult(){
+  //   setRadius(false)
+  //   setShadow(false)
+  // }
+
+  
   return(
   <Layout>
     <SEO title="Page two" />
@@ -54,17 +73,20 @@ const SecondPage = () => {
               cover={Images.fulltime_card_designer}
               linkColor={Colors.PRed}
               title='UI UX Designer'
-              text='UI / UX 設計師' />
+              text='UI / UX 設計師' 
+              radius={radius ? '' : 'noRadius'}
+              shadow={shadow ? '' : 'noShadow'}
+            />
               
           </TableViewCard>
           <OptionArea>
             <Tab label='Configuration' />
             <Option>
               <form>
-                <input type="checkbox" name="Radius" value="Radius" />
+                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
                 <label for="Radius">Radius</label>
                 <br/> <br/>
-                <input type="checkbox" name="Shadow" value="Shadow" />
+                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
                 <label for="Shadow">Shadow</label>
               </form>
             </Option>
@@ -79,16 +101,18 @@ const SecondPage = () => {
               product='雙平台 App 設計開發'
               type='電信業'
               year='2017 年 10 月'
+              radius={radius ? '' : 'noRadius'}
+              shadow={shadow ? '' : 'noShadow'}
             />
           </TableViewCard>
           <OptionArea>
             <Tab label='Configuration' />
             <Option>
               <form>
-                <input type="checkbox" name="Radius" value="Radius"  />
+                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
                 <label for="Radius">Radius</label>
                 <br/> <br/>
-                <input type="checkbox" name="Shadow" value="Shadow" />
+                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
                 <label for="Shadow">Shadow</label>
               </form>
             </Option>

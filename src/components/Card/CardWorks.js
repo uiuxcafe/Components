@@ -54,7 +54,7 @@ const SectionText =  styled(Fonts.span())`
 `
 
 const CardWorks = props => (
-	<Card>
+	<Card className={`${props.radius} ${props.shadow}`}>
 		<Link to={props.href}>
 			<SectionCover src={props.cover}/>
 			<ImgShadow />

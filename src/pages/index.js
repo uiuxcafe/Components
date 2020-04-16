@@ -67,6 +67,7 @@ const CellPage = () => {
     setOpenDescription(false)
   }
 
+  //set Icon
   function IconOpen() {
     setOpenIcon(true);
   }
@@ -75,6 +76,7 @@ const CellPage = () => {
     setOpenIcon(false);
   }
 
+  //set Text
   function TextOpen() {
     setOpenText(true);
   }

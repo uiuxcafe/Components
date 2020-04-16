@@ -8,6 +8,7 @@ const Card = styled(Styles.card())`
 	margin: ${Metrics.px3} 8px;
 	max-height: 360px;
 	margin: 0 auto;
+	
 `
 const CoverGroup = styled.div`
 	background: ${Colors.W5};
@@ -44,7 +45,7 @@ const SectionText = styled(Fonts.h5())`
 `
 
 const CardJobs = props => (
-	<Card>
+	<Card className={`${props.radius} ${props.shadow}`} >
 		<CoverGroup>
 			<SectionCover src={props.cover}/>
 		</CoverGroup>
