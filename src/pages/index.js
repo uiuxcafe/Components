@@ -68,11 +68,19 @@ const CellPage = () => {
   }
 
   function IconOpen() {
-    setOpenIcon(prevOpenIcon => !openIcon);
+    setOpenIcon(true);
+  }
+
+  function IconOff() {
+    setOpenIcon(false);
   }
 
   function TextOpen() {
-    setOpenText(prevOpenText => !openText);
+    setOpenText(true);
+  }
+
+  function TextOff() {
+    setOpenText(false);
   }
 
 
@@ -149,11 +157,18 @@ const CellPage = () => {
               <Tab label='Configuration' />
               <Option>
                 <form>
-                  <input type="checkbox" name="Icon" value="Icon" onClick={IconOpen}  />
-                  <label for="Icon">no Icon</label>
-                  <br/> <br/>
-                  <input type="checkbox" name="Text" value="Text" onClick={TextOpen} />
-                  <label for="Text">no Text</label>
+                  <label for="Icon">Icon</label>
+                    <br/> 
+                    <input type="radio" name="description" value="none" onClick={IconOff} /> <p>None</p>
+                    <br/>
+                    <input type="radio" name="description" value="display" onClick={IconOpen} /> <p>Display</p>
+                    <br/> <br/>
+                  <label for="Text">Text</label>
+                    <br/> 
+                    <input type="radio" name="description" value="none" onClick={TextOff} /> <p>None</p>
+                    <br/>
+                    <input type="radio" name="description" value="display" onClick={TextOpen} /> <p>Display</p>
+                    <br/> <br/>
                 </form>
               </Option>
             </OptionArea>
