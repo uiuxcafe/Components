@@ -48,10 +48,10 @@ const SecondPage = () => {
     console.log(shadow)
   }
 
-  // function setDefult(){
-  //   setRadius(false)
-  //   setShadow(false)
-  // }
+  function setDefult(){
+    setRadius(false)
+    setShadow(false)
+  }
 
   
   return(
@@ -63,8 +63,8 @@ const SecondPage = () => {
       variant={'fullWidth'}
       onChange={(event, value) => setIndex(value)}
     >
-      <Tab label='Card_a' />
-      <Tab label='Card_b' />
+      <Tab label='Card_a' onClick={setDefult} />
+      <Tab label='Card_b' onClick={setDefult} />
     </Tabs>
     <SwipeableViews class="uiux" index={index} onChangeIndex={setIndex} enableMouseEvents>
         <Demo>
