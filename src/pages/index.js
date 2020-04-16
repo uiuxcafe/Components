@@ -43,9 +43,9 @@ const Option = styled.div`
 const CellPage = () => {
   const [index, setIndex] = useState(0)
   const [imgLo, setImgLo] = useState('left')
-  const [openDescription, setOpenDescription] = useState(true)
-  const [openIcon, setOpenIcon] = useState(true)
-  const [openText, setOpenText] = useState(true)
+  const [openDescription, setOpenDescription] = useState(false)
+  const [openIcon, setOpenIcon] = useState(false)
+  const [openText, setOpenText] = useState(false)
 
   console.log(imgLo);
 
@@ -119,13 +119,13 @@ const CellPage = () => {
                     <form>
                       <label for="Img">Img</label>
                         <br/>
-                        <input type="radio" name="location" value="left"  onClick={ImageSetLeft} /> <p>Left</p>
+                        <input type="radio" name="location" value="left"  defaultChecked={true} onClick={ImageSetLeft} /> <p>Left</p>
                         <br/>
                         <input type="radio" name="location" value="right" onClick={ImageSetRight} /> <p>Right</p>
                         <br/> <br/>
                       <label for="Description">Description</label>
                         <br/> 
-                        <input type="radio" name="description" value="none" onClick={DescriptionOff} /> <p>None</p>
+                        <input type="radio" name="description" value="none" defaultChecked={true} onClick={DescriptionOff} /> <p>None</p>
                         <br/>
                         <input type="radio" name="description" value="display" onClick={DescriptionOpen} /> <p>Display</p>
                         <br/> <br/>
@@ -161,13 +161,13 @@ const CellPage = () => {
                 <form>
                   <label for="Icon">Icon</label>
                     <br/> 
-                    <input type="radio" name="description" value="none" onClick={IconOff} /> <p>None</p>
+                    <input type="radio" name="Icon" value="none" defaultChecked={true} onClick={IconOff} /> <p>None</p>
                     <br/>
-                    <input type="radio" name="description" value="display" onClick={IconOpen} /> <p>Display</p>
+                    <input type="radio" name="Icon" value="display" onClick={IconOpen} /> <p>Display</p>
                     <br/> <br/>
                   <label for="Text">Text</label>
                     <br/> 
-                    <input type="radio" name="description" value="none" onClick={TextOff} /> <p>None</p>
+                    <input type="radio" name="description" value="none" defaultChecked={true} onClick={TextOff} /> <p>None</p>
                     <br/>
                     <input type="radio" name="description" value="display" onClick={TextOpen} /> <p>Display</p>
                     <br/> <br/>
