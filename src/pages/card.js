@@ -24,9 +24,12 @@ const OptionArea = styled.div`
 
 const Option = styled.div`
   padding-top: 20px;
-  h4{
+  label{
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
+    padding-top: 15px;
+    padding-left: 5px;
   }
 `
 
@@ -52,12 +55,18 @@ const SecondPage = () => {
               linkColor={Colors.PRed}
               title='UI UX Designer'
               text='UI / UX 設計師' />
+              
           </TableViewCard>
           <OptionArea>
             <Tab label='Configuration' />
             <Option>
-              <h4>Radius</h4>
-              <h4>Shadow</h4>
+              <form>
+                <input type="checkbox" name="Radius" value="Radius" />
+                <label for="Radius">Radius</label>
+                <br/> <br/>
+                <input type="checkbox" name="Shadow" value="Shadow" />
+                <label for="Shadow">Shadow</label>
+              </form>
             </Option>
           </OptionArea>
         </Demo>
@@ -75,8 +84,13 @@ const SecondPage = () => {
           <OptionArea>
             <Tab label='Configuration' />
             <Option>
-              <h4>Radius</h4>
-              <h4>Shadow</h4>
+              <form>
+                <input type="checkbox" name="Radius" value="Radius"  />
+                <label for="Radius">Radius</label>
+                <br/> <br/>
+                <input type="checkbox" name="Shadow" value="Shadow" />
+                <label for="Shadow">Shadow</label>
+              </form>
             </Option>
           </OptionArea>
         </Demo>

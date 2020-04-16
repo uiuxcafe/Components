@@ -21,6 +21,14 @@ const Wrapper = styled(Styles.Wrapper())`
     :only-child {
         border: 1px ${Colors.W10} solid;
     }
+    transition: .2s;
+    .noImage{
+        width: 0px;
+        max-height: 70px;
+    }
+    .noText{
+        display: none;
+    }
 `
 const Icon = styled.img`
     display: inline-block;
@@ -42,9 +50,9 @@ const CellSetting = props => (
     <Wrapper>
         <HrDiv className='border' borderColor={Colors.W10} left='44px' right='0px'/>
         <Link to={props.href}>
-        <Icon src={props.icon} />
-        <Title>{props.title}</Title>
-        <Description>{props.description}</Description>
+        <Icon src={props.icon} className={props.image} />
+        <Title >{props.title}</Title>
+        <Description className={props.text}>{props.description}</Description>
         </Link>
     </Wrapper>
 )

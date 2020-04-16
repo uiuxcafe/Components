@@ -18,23 +18,64 @@ import styled from 'styled-components'
 const Demo = styled.div`
   display: grid;
   grid-template-columns: repeat(2,auto);
-  min-height: 500px;
+  min-height: 500px; 
 `
 
 const OptionArea = styled.div`
+  justify-self: center;
+  border-left: 1px solid #FFF;
 `
 
 const Option = styled.div`
   padding-top: 20px;
-  h4{
+  padding-left: 20px;
+  label,p{
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
+    padding-top: 15px;
+  }
+  p,input{
+    display: inline;
   }
 `
 
 const CellPage = () => {
   const [index, setIndex] = useState(0)
+  const [imgLo, setImgLo] = useState('left')
+  const [openDescription, setOpenDescription] = useState(true)
   const [openIcon, setOpenIcon] = useState(true)
+  const [openText, setOpenText] = useState(true)
+
+  console.log(imgLo);
+
+  //set image
+  function ImageSetLeft() {
+    setImgLo('left')
+  }
+
+  function ImageSetRight() {
+    setImgLo('right')
+  }
+
+  //set description
+  function DescriptionOpen() {
+    setOpenDescription(true)
+  }
+
+  function DescriptionOff() {
+    setOpenDescription(false)
+  }
+
+  function IconOpen() {
+    setOpenIcon(prevOpenIcon => !openIcon);
+  }
+
+  function TextOpen() {
+    setOpenText(prevOpenText => !openText);
+  }
+
+
 
   return(
   <Layout>
@@ -57,14 +98,28 @@ const CellPage = () => {
                       title={content.title}
                       excerpt={content.excerpt}
                       created_at={content.created_at}
+                      image={imgLo}
+                      description={openDescription ? '' : 'noDescription'}
                     />
                   ))}
             </TableView>
             <OptionArea>
                   <Tab label='Configuration' />
                   <Option>
-                    <h4>Icon</h4>
-                    <h4>Text</h4>
+                    <form>
+                      <label for="Img">Img</label>
+                        <br/>
+                        <input type="radio" name="location" value="left"  onClick={ImageSetLeft} /> <p>Left</p>
+                        <br/>
+                        <input type="radio" name="location" value="right" onClick={ImageSetRight} /> <p>Right</p>
+                        <br/> <br/>
+                      <label for="Description">Description</label>
+                        <br/> 
+                        <input type="radio" name="description" value="none" onClick={DescriptionOff} /> <p>None</p>
+                        <br/>
+                        <input type="radio" name="description" value="display" onClick={DescriptionOpen} /> <p>Display</p>
+                        <br/> <br/>
+                    </form>
                   </Option>
             </OptionArea>
           </Demo>
@@ -73,27 +128,38 @@ const CellPage = () => {
               <CellSetting
                 icon={Images.setting_privacy}
                 title='隱私權條款'
+                image={openIcon ? 'Image' : 'noImage'}
+                text={openText ? 'Text' : 'noText'}
               />
               <CellSetting
                 icon={Images.setting_service}
                 title='服務條款'
+                image={openIcon ? 'Image' : 'noImage'}
+                text={openText ? 'Text' : 'noText'}
               />
               <CellSetting
                 icon={Images.setting_info}
                 title='版本編號'
                 description='0.0.3'
+                image={openIcon ? 'Image' : 'noImage'}
+                text={openText ? 'Text' : 'noText'}
               />
             </SettingView>
             <OptionArea>
               <Tab label='Configuration' />
               <Option>
-                <h4>Img</h4>
-                <h4>Description</h4>
+                <form>
+                  <input type="checkbox" name="Icon" value="Icon" onClick={IconOpen}  />
+                  <label for="Icon">no Icon</label>
+                  <br/> <br/>
+                  <input type="checkbox" name="Text" value="Text" onClick={TextOpen} />
+                  <label for="Text">no Text</label>
+                </form>
               </Option>
             </OptionArea>
           </Demo>
         </SwipeableViews>
-    <Link to="/card"  class='demolink'> To Card</Link>
+    <Link to="/card" class='demolink'>To Card</Link>
   </Layout>
   )
 }
