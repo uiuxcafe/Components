@@ -6,6 +6,8 @@ import {
   TableViewCard,
   CardJobs,
   CardWorks,
+  Card_a,
+  WCardView,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
@@ -65,6 +67,7 @@ const SecondPage = () => {
     >
       <Tab label='Card_a' onClick={setDefult} />
       <Tab label='Card_b' onClick={setDefult} />
+      <Tab label='Card_c' onClick={setDefult} />
     </Tabs>
     <SwipeableViews class="uiux" index={index} onChangeIndex={setIndex} enableMouseEvents>
         <Demo>
@@ -77,7 +80,6 @@ const SecondPage = () => {
               radius={radius ? '' : 'noRadius'}
               shadow={shadow ? '' : 'noShadow'}
             />
-              
           </TableViewCard>
           <OptionArea>
             <Tab label='Configuration' />
@@ -117,6 +119,20 @@ const SecondPage = () => {
               </form>
             </Option>
           </OptionArea>
+        </Demo>
+        <Demo>
+          <WCardView>
+            <Card_a />
+          </WCardView>
+          <Option>
+              {/* <form>
+                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
+                <label for="Radius">Radius</label>
+                <br/> <br/>
+                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
+                <label for="Shadow">Shadow</label>
+              </form> */}
+            </Option>
         </Demo>
   
     </SwipeableViews>

@@ -6,6 +6,7 @@ import CellEpisode from "./Cell/CellEpisode";
 import CellSetting from "./Cell/CellSetting";
 import TableView from "./View/TableView";
 import TableViewCard from "./View/TableViewCard";
+import WCardView from "./View/WCardView";
 import SettingView from "./View/SettingView";
 import Layout from "./layout";
 import SEO from "./seo";
@@ -33,5 +34,6 @@ export {
     CardWorks,
     TableViewCard,
     SettingView,
-    HrDiv
+    HrDiv,
+    WCardView
  };
