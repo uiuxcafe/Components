@@ -11,7 +11,11 @@ const Wrapper = styled(Styles.TableView())`
   ${'' /* top: 50%;
   transform: translateY(-50%);
   padding: 50px; */}
+  background: inherit;
   align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-gap: 20px;
 `
 
 const WCardView = ({ children }) => {

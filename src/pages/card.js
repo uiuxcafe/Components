@@ -139,6 +139,7 @@ const SecondPage = () => {
         <Demo>
           <WCardView>
             <CardHover />
+            <CardHover />
           </WCardView>
         </Demo>
     </SwipeableViews>
