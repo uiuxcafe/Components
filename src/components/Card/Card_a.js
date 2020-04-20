@@ -7,8 +7,10 @@ const Card = styled(Styles.gxcCard())`
     min-width: 350px;
     min-height: 400px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
     cursor: pointer;
+    background: inherit;
+    border-radius: .8rem !important;
     &:hover{
         -webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
         box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
@@ -54,6 +56,7 @@ const ImgArea = styled.div`
     height: 325px;
     -webkit-transition: 0.35s;
     transition: 0.35s;
+    overflow: hidden; 
 `
 
 const CardBG = styled.img`
