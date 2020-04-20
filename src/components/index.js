@@ -15,6 +15,7 @@ import Card_b from "./Card/Card_b"
 import BorderAll from "./borderAll.js";
 import CardJobs from './Card/CardJobs';
 import CardWorks from './Card/CardWorks';
+import CardHover from "./Card/CardHover";
 import HrDiv from './Bar/HrDiv';
 
 export {
@@ -35,5 +36,6 @@ export {
     TableViewCard,
     SettingView,
     HrDiv,
-    WCardView
+    WCardView,
+    CardHover,
  };
