@@ -122,7 +122,9 @@ const SecondPage = () => {
         </Demo>
         <Demo>
           <WCardView>
-            <Card_a />
+            <Card_a 
+              img={Images.card_a_sdwan_01}
+            />
           </WCardView>
           <Option>
               {/* <form>
