@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
-import { Colors, Metrics, Styles , Fonts } from '../../Themes'
+// import { Link } from 'gatsby';
+import { Images } from '../../Themes'
 
 const Card = styled.div`
     border: 0px;
@@ -25,7 +25,7 @@ const Card = styled.div`
     &:hover{
         -webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
         box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
-        img{
+        .Img{
             box-shadow: 0px 15px 25px #D2D3D4;
             transform: translate3d(0,0px,0) ;
             -moz-transition-duration: 0.5s;
@@ -95,6 +95,10 @@ const TextGroup = styled.div`
         position: relative;
         color: #000;
     }
+    .icon{
+        box-shadow: inherit;
+        position: absolute;
+    }
 `
 
 const More = styled.div`
@@ -102,29 +106,29 @@ const More = styled.div`
     position: absolute;
     bottom: 280px;
     right: 55px;
+    display: inline;
     p{
         font-weight: 500;
         font-size: 20px;
         z-index: 1000;
         color: #1F9CFF;
+        display: inline;
     }
-    img{
-        margin-top: -5px;
-    }
+    
 `
 
 const CardA = props => (
 	<Card>
         <ImgCard>
             <ImgArea className='ImgArea'>
-                <CardBG src='' alt='' />
+                <CardBG className='Img' src={props.img} alt='' />
             </ImgArea>
             <TextGroup className='TextGroup'>
                 <h4>簡化的網路架構</h4>
                 <p className='text'>簡化網際網路連線架構，避免國內網路節點層層轉接。</p>
                 <More className='More'>
                     <p>進一步了解</p>
-                    {/* <img src='' alt='' className='icon' /> */}
+                    <img src={Images.arrow_right} alt='' className='icon' />
                 </More>
             </TextGroup>
         </ImgCard>
