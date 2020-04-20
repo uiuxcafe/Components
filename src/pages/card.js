@@ -7,6 +7,7 @@ import {
   CardJobs,
   CardWorks,
   Card_a,
+  Card_b,
   WCardView,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
@@ -68,6 +69,7 @@ const SecondPage = () => {
       <Tab label='Card_a' onClick={setDefult} />
       <Tab label='Card_b' onClick={setDefult} />
       <Tab label='Card_c' onClick={setDefult} />
+      <Tab label='Card_d' onClick={setDefult} />
     </Tabs>
     <SwipeableViews class="uiux" index={index} onChangeIndex={setIndex} enableMouseEvents>
         <Demo>
@@ -136,7 +138,13 @@ const SecondPage = () => {
               </form> */}
             </Option>
         </Demo>
-  
+        <Demo>
+          <WCardView>
+            <Card_b 
+              img={Images.card_b_sdwan_01}
+            />
+          </WCardView>
+        </Demo>
     </SwipeableViews>
     <Link to="/" class='demolink'> To Cell</Link>
   </Layout>

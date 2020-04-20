@@ -1,22 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 // import { Link } from 'gatsby';
-import { Images } from '../../Themes'
+import { Images, Styles } from '../../Themes'
 
-const Card = styled.div`
-    border: 0px;
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: .8rem !important;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    overflow: hidden;
-    position: relative;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+const Card = styled(Styles.gxcCard())`
     min-width: 350px;
     min-height: 400px;
     position: relative;
