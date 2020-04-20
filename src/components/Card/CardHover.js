@@ -19,6 +19,7 @@ const Card = styled.div`
         align-items: center;
         background-color: #FFF;
         border-radius: 16px;
+        transform-style: preserve-3d;
     }
     .Tilt-inner{
         transform: translateZ(20px);
@@ -30,7 +31,7 @@ const CardHover = props => {
     return(
         <Card>
             <Tilt className="Tilt" 
-            options={{ max : 35, scale: 1, reverse: true, easing: 'transition: .6s cubic-bezier(.445,.05,.55,.95)' }} style={{ height: 250, width: 250 }} >
+            options={{ max : 35, scale: 1, reverse: true, easing: 'cubic-bezier(.03,.98,.52,.99)' }} style={{ height: 250, width: 250 }} >
                 <div className="Tilt-inner"> 👽 </div>
             </Tilt>
         </Card>
