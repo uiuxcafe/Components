@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Moment from 'react-moment'
 import 'moment/locale/zh-tw'
 // import { BorderAll } from '../../components'
-import { Styles, Colors } from '../../Themes'
+import { Styles } from '../../Themes'
 import ProgressiveImage from "react-progressive-graceful-image";
 
 const Wrapper = styled(Styles.CellWrapper())`

@@ -1,5 +1,3 @@
-import { red } from "@material-ui/core/colors";
-
 export const Colors = {
 
   // Elevation level
@@ -15,7 +13,6 @@ export const Colors = {
   dp16: '#262626',  // 15%
   dp24: '#292929',  // 16%
 
-  W5: 'rgba(255,255,255,0.05)',
   W5: 'rgba(255,255,255,0.05)',
   W10: 'rgba(255,255,255,0.1)',
   W38: 'rgba(255, 255, 255, 0.38)',
@@ -37,7 +34,7 @@ export const Colors = {
 // Primary Color -> yellow？
   S200: '#3B242B',
 // Secondary Color -> 還沒決定
-  SRedHover: '#5B2834',
+  // SRedHover: '#5B2834',
 
   PRed: '#FF3069',
   SRed: '#3B242B',
@@ -55,8 +52,6 @@ export const Colors = {
   BGrad: ' linear-gradient(0deg, #15191C 0%, #111314 100%)',
   BannerGrad: 'linear-gradient(90deg, #15191C 0%, #111314 100%)',
   FadeColor: 'linear-gradient(90deg, #15191C 0%, transparent 14%, transparent 87%, #111314 100%)',
-
-  Red: 'red',
   
   G10: '#E0E0E1',
   G30: '#9DA1A4',

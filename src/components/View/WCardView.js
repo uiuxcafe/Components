@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Styles, Metrics } from '../../Themes'
+import { Styles } from '../../Themes'
 
 const Wrapper = styled(Styles.TableView())`
   max-width: inherit;

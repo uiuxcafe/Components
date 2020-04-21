@@ -6,8 +6,8 @@ import {
   TableViewCard,
   CardJobs,
   CardWorks,
-  Card_a,
-  Card_b,
+  CardA,
+  CardB,
   WCardView,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
@@ -87,11 +87,11 @@ const SecondPage = () => {
             <Tab label='Configuration' />
             <Option>
               <form>
-                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
-                <label for="Radius">Radius</label>
+                <input type="checkbox" id='radius' name="Radius" value="Radius" onClick={openRadius} />
+                <label htmlFor="radius">Radius</label>
                 <br/> <br/>
-                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
-                <label for="Shadow">Box Shadow</label>
+                <input type="checkbox" id='shadow' name="Shadow" value="Shadow" onClick={openShadow} />
+                <label htmlFor="shadow">Box Shadow</label>
               </form>
             </Option>
           </OptionArea>
@@ -113,18 +113,18 @@ const SecondPage = () => {
             <Tab label='Configuration' />
             <Option>
               <form>
-                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
-                <label for="Radius">Radius</label>
+                <input type="checkbox" id='radius' name="Radius" value="Radius" onClick={openRadius} />
+                <label htmlFor="radius" >Radius</label>
                 <br/> <br/>
-                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
-                <label for="Shadow">Shadow</label>
+                <input type="checkbox"  id='shadow' name="Shadow" value="Shadow" onClick={openShadow} />
+                <label htmlFor="shadow" >Shadow</label>
               </form>
             </Option>
           </OptionArea>
         </Demo>
         <Demo>
           <WCardView>
-            <Card_a 
+            <CardA
               img={Images.card_a_sdwan_01}
             />
           </WCardView>
@@ -140,7 +140,7 @@ const SecondPage = () => {
         </Demo>
         <Demo>
           <WCardView>
-            <Card_b 
+            <CardB 
               img={Images.card_b_sdwan_01}
             />
           </WCardView>

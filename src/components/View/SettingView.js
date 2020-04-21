@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import { Styles, Metrics } from '../../Themes'
+import { Styles } from '../../Themes'
 
 const Wrapper = styled(Styles.TableView())`
   min-width: 350px;
