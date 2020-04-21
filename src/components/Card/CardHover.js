@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
-import { Colors, Styles, Metrics , Fonts} from '../../Themes'
+// import { Link } from 'gatsby';
+// import { Colors, Styles, Metrics , Fonts} from '../../Themes'
 import Tilt from 'react-tilt'
 
 const Card = styled.div`
@@ -32,7 +32,7 @@ const CardHover = props => {
         <Card>
             <Tilt className="Tilt" 
             options={{ max : 35, scale: 1, reverse: true, easing: 'cubic-bezier(.03,.98,.52,.99)' }} style={{ height: 250, width: 250 }} >
-                <div className="Tilt-inner"> 👽 </div>
+                <div className="Tilt-inner"> Tt </div>
             </Tilt>
         </Card>
     )
