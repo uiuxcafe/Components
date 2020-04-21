@@ -79,7 +79,7 @@ const More = styled.div`
     
 `
 
-const CardA = props => (
+const gxcCardA = props => (
 	<Card>
         <ImgArea className='ImgArea'>
             <CardBG className='Img' src={props.img} alt='' />
@@ -94,4 +94,4 @@ const CardA = props => (
         </TextGroup>
 	</Card>
 )
-export default CardA
+export default gxcCardA

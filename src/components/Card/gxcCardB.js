@@ -63,7 +63,7 @@ const More = styled.div`
     }
 `
 
-const CardA = props => (
+const gxcCardB = props => (
 	<Card>
         <ImgCard>
             <ImgArea className='ImgArea'>
@@ -80,4 +80,4 @@ const CardA = props => (
         </ImgCard>
 	</Card>
 )
-export default CardA
+export default gxcCardB

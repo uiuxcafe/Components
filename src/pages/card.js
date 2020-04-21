@@ -6,9 +6,9 @@ import {
   TableViewCard,
   CardJobs,
   CardWorks,
-  CardA,
-  CardB,
-  CardC,
+  GxcCardA,
+  GxcCardB,
+  GxcCardC,
   WCardView,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
@@ -126,7 +126,7 @@ const SecondPage = () => {
         </Demo>
         <Demo>
           <WCardView>
-            <CardA
+            <GxcCardA
               img={Images.card_a_sdwan_01}
             />
           </WCardView>
@@ -142,14 +142,14 @@ const SecondPage = () => {
         </Demo>
         <Demo>
           <WCardView>
-            <CardB 
+            <GxcCardB 
               img={Images.card_b_sdwan_01}
             />
           </WCardView>
         </Demo>
         <Demo>
           <WCardView>
-            <CardC />
+            <GxcCardC />
           </WCardView>
         </Demo>
     </SwipeableViews>
