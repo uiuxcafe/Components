@@ -6,6 +6,7 @@ import {
   CardView,
   CardHover,
   GameTyper,
+  ReactTyper,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
@@ -31,7 +32,8 @@ const TestPage = () => {
           onChange={(event, value) => setIndex(value)}
         >
           <Tab label='CardHover' />
-          <Tab label='Typewriter' />
+          <Tab label='Typewriter_css' />
+          <Tab label='Typewriter_JS' />
         </Tabs>
         <SwipeableViews index={index} onChangeIndex={setIndex} enableMouseEvents>
           <Demo>
@@ -45,6 +47,11 @@ const TestPage = () => {
               <GameTyper
               text='正在輸入中...範例正在輸入中...範例正在輸入中...範例'
               />
+            </CardView>
+          </Demo>
+          <Demo>
+            <CardView>
+              <ReactTyper />
             </CardView>
           </Demo>
         </SwipeableViews>

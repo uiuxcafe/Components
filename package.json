@@ -23,7 +23,8 @@
     "react-progressive-graceful-image": "^0.6.11",
     "react-swipeable-views": "^0.13.9",
     "react-tilt": "^0.1.4",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "typewriter-effect": "^2.13.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

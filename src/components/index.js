@@ -20,6 +20,7 @@ import CardWorks from './Card/CardWorks';
 import CardHover from "./Card/CardHover";
 import HrDiv from './Bar/HrDiv';
 import GameTyper from './Text/GameTyper'
+import ReactTyper from './Text/ReactTyper'
 
 export {
     CardNews,
@@ -44,4 +45,5 @@ export {
     WCardView,
     CardHover,
     GameTyper,
+    ReactTyper,
  };
