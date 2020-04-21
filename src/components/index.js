@@ -6,6 +6,7 @@ import CellEpisode from "./Cell/CellEpisode";
 import CellSetting from "./Cell/CellSetting";
 import TableView from "./View/TableView";
 import TableViewCard from "./View/TableViewCard";
+import CardView from "./View/CardView";
 import WCardView from "./View/WCardView";
 import SettingView from "./View/SettingView";
 import Layout from "./layout";
@@ -36,6 +37,7 @@ export {
     TableViewCard,
     SettingView,
     HrDiv,
+    CardView,
     WCardView,
     CardHover,
  };

@@ -7,6 +7,7 @@ import {
   CardJobs,
   CardWorks,
   Card_a,
+  CardView,
   WCardView,
   CardHover,
 } from '../components'
@@ -137,10 +138,10 @@ const SecondPage = () => {
             </Option>
         </Demo>
         <Demo>
-          <WCardView>
+          <CardView>
             <CardHover />
             <CardHover />
-          </WCardView>
+          </CardView>
         </Demo>
     </SwipeableViews>
     <Link to="/" class='demolink'> To Cell</Link>
