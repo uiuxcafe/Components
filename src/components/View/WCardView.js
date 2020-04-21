@@ -12,6 +12,7 @@ const Wrapper = styled(Styles.TableView())`
   transform: translateY(-50%);
   padding: 50px; */}
   align-self: center;
+  background: inherit;
 `
 
 const WCardView = ({ children }) => {

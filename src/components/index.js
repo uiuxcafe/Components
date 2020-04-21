@@ -10,8 +10,9 @@ import WCardView from "./View/WCardView";
 import SettingView from "./View/SettingView";
 import Layout from "./layout";
 import SEO from "./seo";
-import CardA from "./Card/Card_a"
-import CardB from "./Card/Card_b"
+import CardA from "./Card/CardA"
+import CardB from "./Card/CardB"
+import CardC from "./Card/CardC"
 import BorderAll from "./borderAll.js";
 import CardJobs from './Card/CardJobs';
 import CardWorks from './Card/CardWorks';
@@ -29,6 +30,7 @@ export {
     SEO,
     CardA,
     CardB,
+    CardC,
     BorderAll,
     CardJobs,
     CardWorks,
