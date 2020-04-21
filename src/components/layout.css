@@ -40,6 +40,7 @@ a {
   text-decoration: none;
   color: #FFF;
   font-size: 20px;
+
 }
 
 .mobile {
@@ -53,6 +54,7 @@ a {
 
 .demolink{
   height: 20px;
+  padding-left: 15px;
 }
 
 .noRadius,.noRadius div,.noRadius img{

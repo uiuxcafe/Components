@@ -177,6 +177,7 @@ const CellPage = () => {
           </Demo>
         </SwipeableViews>
     <Link to="/card" class='demolink'>To Card</Link>
+    <Link to="/test" class='demolink'>To Test</Link>
   </Layout>
   )
 }

@@ -1,0 +1,51 @@
+import React, { useState } from 'react'
+import { Link } from "gatsby"
+import {
+  SEO,
+  Layout,
+  CardView,
+  CardHover,
+} from '../components'
+import Tabs from '@material-ui/core/Tabs'
+import Tab from '@material-ui/core/Tab'
+import SwipeableViews from 'react-swipeable-views'
+import styled from 'styled-components'
+
+const Demo = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  min-height: 500px; 
+`
+
+const TestPage = () => {
+  const [index, setIndex] = useState(0)
+
+  return(
+  <Layout>
+    <SEO title="Test" />
+        <Tabs
+          value={index}
+          className='ForumTab'
+          variant={'fullWidth'}
+          onChange={(event, value) => setIndex(value)}
+        >
+          <Tab label='CardHover' />
+          <Tab label='Typewriter' />
+        </Tabs>
+        <SwipeableViews index={index} onChangeIndex={setIndex} enableMouseEvents>
+          <Demo>
+            <CardView>
+              <CardHover />
+              <CardHover />
+            </CardView>
+          </Demo>
+          <Demo>
+
+          </Demo>
+        </SwipeableViews>
+    <Link to="/" class='demolink'>To Cell</Link>
+  </Layout>
+  )
+}
+
+export default TestPage

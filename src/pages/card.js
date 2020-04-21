@@ -6,12 +6,10 @@ import {
   TableViewCard,
   CardJobs,
   CardWorks,
-  CardView,
   GxcCardA,
   GxcCardB,
   GxcCardC,
   WCardView,
-  CardHover,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
@@ -74,7 +72,6 @@ const SecondPage = () => {
       <Tab label='Card_c' onClick={setDefult} />
       <Tab label='Card_d' onClick={setDefult} />
       <Tab label='Card_e' onClick={setDefult} />
-      <Tab label='Test_Card' onClick={setDefult} />
     </Tabs>
     <SwipeableViews class="uiux" index={index} onChangeIndex={setIndex} enableMouseEvents>
         <Demo>
@@ -175,12 +172,7 @@ const SecondPage = () => {
               </form> */}
             </Option>
         </Demo>
-        <Demo>
-          <CardView>
-            <CardHover />
-            <CardHover />
-          </CardView>
-        </Demo>
+
     </SwipeableViews>
     <Link to="/" class='demolink'> To Cell</Link>
   </Layout>
