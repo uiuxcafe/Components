@@ -6,7 +6,6 @@ import { Images, Styles } from '../../Themes'
 const Card = styled(Styles.gxcCard())`
     max-width: 350px;
     min-height: 375px;
-    cursor: pointer;
 `
 
 const ImgArea = styled.div`

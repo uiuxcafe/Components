@@ -170,6 +170,7 @@ const Styles = {
         transition: all .3s;
         overflow: hidden;
         position: relative;
+        cursor: pointer;
         background: #FFF;
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;

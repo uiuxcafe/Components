@@ -6,8 +6,6 @@ import { Images, Styles } from '../../Themes'
 const Card = styled(Styles.gxcCard())`
     min-width: 350px;
     min-height: 400px; 
-    cursor: pointer;
-    background: inherit;
     &:hover{
         .TextGroup{
             padding: 45px 30px 10px 30px;

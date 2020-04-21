@@ -146,11 +146,31 @@ const SecondPage = () => {
               img={Images.card_b_sdwan_01}
             />
           </WCardView>
+          <Option>
+              {/* <form>
+                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
+                <label for="Radius">Radius</label>
+                <br/> <br/>
+                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
+                <label for="Shadow">Shadow</label>
+              </form> */}
+            </Option>
         </Demo>
         <Demo>
           <WCardView>
-            <GxcCardC />
+            <GxcCardC 
+              img={Images.card_b_sdwan_01}
+            />
           </WCardView>
+          <Option>
+              {/* <form>
+                <input type="checkbox" name="Radius" value="Radius" onClick={openRadius} />
+                <label for="Radius">Radius</label>
+                <br/> <br/>
+                <input type="checkbox" name="Shadow" value="Shadow" onClick={openShadow} />
+                <label for="Shadow">Shadow</label>
+              </form> */}
+            </Option>
         </Demo>
     </SwipeableViews>
     <Link to="/" class='demolink'> To Cell</Link>
