@@ -56,17 +56,12 @@ const CardBG = styled.img`
     height: 160px;
 `
 
-const TextGroup = styled.div`
+const TextGroup = styled(Styles.gxcTextGroup())`
     position: absolute;
-    background: #FFF;
-    color: #000;
     height: 250px;
     width: 100%;
     z-index: 1000;
-    -webkit-transition:  0.35s;
-    transition:  0.35s;
     word-wrap: break-word;
-    overflow: hidden;
     top: 130px;
     padding: 15px 30px;
     h4{

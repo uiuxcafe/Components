@@ -178,6 +178,14 @@ const Styles = {
             -webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
             box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
         }
+    `,
+    gxcTextGroup:() => styled.div`
+        position: absolute;
+        background: #FFF;
+        color: #000;
+        -webkit-transition:  0.35s;
+        transition:  0.35s;
+        overflow: hidden;
     `
   
 
