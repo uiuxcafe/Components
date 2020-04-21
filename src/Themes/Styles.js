@@ -159,7 +159,37 @@ const Styles = {
       transform: translateY(-3px)   scale(0.95, 0.95);
       ${'' /* box-shadow:inset 0px 0px 0px 1px ${Colors.W10}, 10px 15px 40px 0 ${Colors.B50};    */}
       }
-  `,
+    `,
+    gxcCard:() => styled.div`
+        border: 0px;
+        -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: .8rem !important;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        background: #FFF;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        &:hover{
+            -webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    `,
+    gxcTextGroup:() => styled.div`
+        position: absolute;
+        background: #FFF;
+        color: #000;
+        -webkit-transition:  0.35s;
+        transition:  0.35s;
+        overflow: hidden;
+    `
+  
 
 }
 export default Styles

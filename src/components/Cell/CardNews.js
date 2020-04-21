@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import Moment from 'react-moment'
 import 'moment/locale/zh-tw'
 import { Styles, Colors } from '../../Themes'

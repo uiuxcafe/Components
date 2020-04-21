@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 // import { BorderAll } from '../../components'
-import { Styles, Colors } from '../../Themes'
+import { Styles } from '../../Themes'
 import Link from 'gatsby-link'
 import ProgressiveImage from "react-progressive-graceful-image";
 

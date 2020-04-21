@@ -6,5 +6,9 @@ const Images = {
     setting_privacy: require('../img/setting_privacy.svg'),
     setting_service: require('../img/setting_service.svg'),
     setting_info: require('../img/setting_info.svg'),
+
+    arrow_right: require('../img/arrow_right.svg'),
+    card_a_sdwan_01: require('../img/card_a_sdwan_01.png'),
+    card_b_sdwan_01: require('../img/card_b_sdwan_01.png')
 }
 export default Images;

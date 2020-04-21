@@ -7,7 +7,6 @@ import {
   CellSetting,
   SettingView,
   CellNews,
-
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
@@ -118,15 +117,15 @@ const CellPage = () => {
                   <Tab label='Configuration' />
                   <Option>
                     <form>
-                      <label for="Img">Img</label>
+                      <label htmlFor="Img">Img</label>
                         <br/>
-                        <input type="radio" name="location" value="left"  defaultChecked={true} onClick={ImageSetLeft} /> <p>Left</p>
+                        <input id='Img' type="radio" name="location" value="left"  defaultChecked={true} onClick={ImageSetLeft} /> <p>Left</p>
                         <br/>
                         <input type="radio" name="location" value="right" onClick={ImageSetRight} /> <p>Right</p>
                         <br/> <br/>
-                      <label for="Description">Description</label>
+                      <label htmlFor="Description">Description</label>
                         <br/> 
-                        <input type="radio" name="description" value="none" defaultChecked={true} onClick={DescriptionOff} /> <p>None</p>
+                        <input id='Description' type="radio" name="description" value="none" defaultChecked={true} onClick={DescriptionOff} /> <p>None</p>
                         <br/>
                         <input type="radio" name="description" value="display" onClick={DescriptionOpen} /> <p>Display</p>
                         <br/> <br/>
@@ -160,15 +159,15 @@ const CellPage = () => {
               <Tab label='Configuration' />
               <Option>
                 <form>
-                  <label for="Icon">Icon</label>
+                  <label htmlFor="Icon">Icon</label>
                     <br/> 
-                    <input type="radio" name="Icon" value="none" defaultChecked={true} onClick={IconOff} /> <p>None</p>
+                    <input id='Icon' type="radio" name="Icon" value="none" defaultChecked={true} onClick={IconOff} /> <p>None</p>
                     <br/>
                     <input type="radio" name="Icon" value="display" onClick={IconOpen} /> <p>Display</p>
                     <br/> <br/>
-                  <label for="Text">Text</label>
+                  <label htmlFor="Text">Text</label>
                     <br/> 
-                    <input type="radio" name="description" value="none" defaultChecked={true} onClick={TextOff} /> <p>None</p>
+                    <input id='Text' type="radio" name="description" value="none" defaultChecked={true} onClick={TextOff} /> <p>None</p>
                     <br/>
                     <input type="radio" name="description" value="display" onClick={TextOpen} /> <p>Display</p>
                     <br/> <br/>

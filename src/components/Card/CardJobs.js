@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
 import { Colors, Styles, Metrics , Fonts} from '../../Themes'
 
 const Card = styled(Styles.card())`
