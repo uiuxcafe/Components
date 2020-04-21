@@ -19,6 +19,7 @@ import CardJobs from './Card/CardJobs';
 import CardWorks from './Card/CardWorks';
 import CardHover from "./Card/CardHover";
 import HrDiv from './Bar/HrDiv';
+import GameTyper from './Text/GameTyper'
 
 export {
     CardNews,
@@ -42,4 +43,5 @@ export {
     CardView,
     WCardView,
     CardHover,
+    GameTyper,
  };

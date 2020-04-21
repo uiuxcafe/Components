@@ -5,6 +5,7 @@ import {
   Layout,
   CardView,
   CardHover,
+  GameTyper,
 } from '../components'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
@@ -40,7 +41,11 @@ const TestPage = () => {
             </CardView>
           </Demo>
           <Demo>
-
+            <CardView>
+              <GameTyper
+              text='正在輸入中...範例正在輸入中...範例正在輸入中...範例'
+              />
+            </CardView>
           </Demo>
         </SwipeableViews>
     <Link to="/" class='demolink'>To Cell</Link>
